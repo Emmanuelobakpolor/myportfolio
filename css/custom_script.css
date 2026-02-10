@@ -719,9 +719,33 @@ body:not(.light) #dtr-header-global #dark-mode-toggle:hover {
     font-size: 17px !important;
   }
 
-  /* Responsive header improvements */
+  /* Sticky mobile header */
   #dtr-responsive-header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
     padding: 10px 0;
+    background-color: var(--dtr-base-color-primary);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--dtr-border-color-main);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Add shadow when scrolled */
+  #dtr-responsive-header.xs-admin-toolbar {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Push page content below the fixed header */
+  #dtr-main-header {
+    margin-bottom: 0;
+  }
+
+  .elementor-9 .elementor-element.elementor-element-7b45631 {
+    --padding-top: 120px !important;
   }
 
   #dtr-responsive-header .container {
@@ -730,6 +754,36 @@ body:not(.light) #dtr-header-global #dark-mode-toggle:hover {
 
   #dtr-responsive-header .dtr-logo-subtext {
     font-size: 14px;
+  }
+
+  /* Dropdown menu: slides down from the sticky header */
+  .slicknav_nav {
+    position: fixed !important;
+    top: auto;
+    left: 0;
+    right: 0;
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+    background-color: var(--dtr-base-color-primary);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid var(--dtr-border-color-main);
+    z-index: 9998;
+  }
+
+  /* Light mode sticky header */
+  body.light #dtr-responsive-header {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+  }
+
+  body.light #dtr-responsive-header.xs-admin-toolbar {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  body.light .slicknav_nav {
+    background-color: #ffffff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-bottom-color: rgba(0, 0, 0, 0.08);
   }
 
   /* Prevent horizontal overflow */
@@ -766,9 +820,9 @@ body:not(.light) #dtr-header-global #dark-mode-toggle:hover {
     font-size: 1.4em !important;
   }
 
-  /* Hero padding tighter */
+  /* Hero padding tighter (accounts for sticky header) */
   .elementor-9 .elementor-element.elementor-element-7b45631 {
-    --padding-top: 80px !important;
+    --padding-top: 100px !important;
     --padding-bottom: 40px !important;
   }
 

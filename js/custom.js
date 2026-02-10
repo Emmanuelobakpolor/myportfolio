@@ -133,13 +133,16 @@ jQuery(function($) {
 		
 		// responsive header nav scroll
 		var mnavoffset = $('#dtr-responsive-header').height();
-		$('.dtr-responsive-header-menu a[href^="#"]').on('click', function(){  
-			event.preventDefault();  
+		$('.dtr-responsive-header-menu a[href^="#"]').on('click', function(){
+			event.preventDefault();
+			// Close the mobile menu after clicking a link
+			$('.slicknav_nav').slideUp();
+			$('#dtr-menu-button').removeClass('is-active');
 			var target = this.hash;
 			var $target = $(target);
 			if($target.length){
 				$('html, body').animate({
-					scrollTop: $($target).offset().top + mnavoffset - 40
+					scrollTop: $($target).offset().top - mnavoffset - 20
 				}, 500);
 				return false;
 			}
