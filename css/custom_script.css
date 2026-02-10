@@ -485,3 +485,353 @@ body:not(.light) #dtr-header-global #dark-mode-toggle:hover {
     padding: 2px 8px;
   }
 }
+
+/* ============================================
+   Responsive & Mobile Improvements
+   ============================================ */
+
+/* --- Tablet (max-width: 1024px) --- */
+@media (max-width: 1024px) {
+
+  /* Hero section: reduce heading size */
+  h1,
+  .elementor-widget-heading h1.elementor-heading-title {
+    font-size: 2.5em;
+  }
+
+  h2,
+  .elementor-widget-heading h2.elementor-heading-title {
+    font-size: 2em;
+  }
+
+  /* Hero CTA buttons: center and allow wrapping */
+  .elementor-9 .elementor-element.elementor-element-d4420fe {
+    --flex-wrap-mobile: wrap;
+    --justify-content: center;
+  }
+
+  /* Hero email button: truncate long text */
+  .elementor-element-a5daa23 .dtr-btn__text {
+    max-width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  /* Hero about image: constrain size */
+  .elementor-element-6c5d9ed .dtr-about__img img {
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Reduce section paddings */
+  .elementor-9 .elementor-element.elementor-element-164ad17,
+  .elementor-9 .elementor-element.elementor-element-24f7ebf,
+  .elementor-9 .elementor-element.elementor-element-8e7f0bd {
+    --padding-top: 60px;
+    --padding-bottom: 60px;
+  }
+}
+
+/* --- Mobile (max-width: 767px) --- */
+@media (max-width: 767px) {
+
+  /* Hero section: reduce top padding */
+  .elementor-9 .elementor-element.elementor-element-7b45631 {
+    --padding-top: 100px !important;
+    --padding-bottom: 50px !important;
+    --padding-left: 16px !important;
+    --padding-right: 16px !important;
+    --gap: 30px 20px !important;
+  }
+
+  /* Hero heading: scale down significantly */
+  h1,
+  .elementor-widget-heading h1.elementor-heading-title {
+    font-size: 2em !important;
+    letter-spacing: -0.5px;
+  }
+
+  h2,
+  .elementor-widget-heading h2.elementor-heading-title {
+    font-size: 1.6em !important;
+  }
+
+  h3,
+  .elementor-widget-heading h3.elementor-heading-title {
+    font-size: 1.35em !important;
+  }
+
+  /* Hero subheading text */
+  .elementor-element-8331b54 .elementor-widget-text-editor .elementor-widget-container {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* Hero icon heading */
+  .dtr-iconhead__heading {
+    font-size: 14px !important;
+  }
+
+  .dtr-iconhead {
+    justify-content: center;
+  }
+
+  /* Hero CTA buttons: stack vertically */
+  .elementor-9 .elementor-element.elementor-element-d4420fe {
+    --flex-direction: column !important;
+    --container-widget-width: 100% !important;
+    --container-widget-flex-grow: 0 !important;
+    --align-items: center !important;
+    --gap: 12px 0px !important;
+  }
+
+  /* Make buttons full-width on mobile */
+  .elementor-element-d4420fe .elementor-widget-dtr-button {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .elementor-element-d4420fe .dtr-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+    font-size: 15px !important;
+  }
+
+  /* Email button: truncate long email address */
+  .elementor-element-a5daa23 .dtr-btn__text {
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 13px !important;
+  }
+
+  /* Hero about image section */
+  .elementor-element-8c0112e {
+    order: -1;
+  }
+
+  .elementor-element-6c5d9ed .dtr-about__img {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .elementor-element-6c5d9ed .dtr-about__img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Hero floating labels: adjust positioning */
+  .elementor-9 .elementor-element.elementor-element-6c5d9ed .dtr-about-title__left {
+    top: auto !important;
+    bottom: -10px;
+    left: -5px !important;
+  }
+
+  .elementor-9 .elementor-element.elementor-element-6c5d9ed .dtr-about-title__right {
+    bottom: -10px !important;
+    right: -5px !important;
+  }
+
+  .dtr-about-title {
+    font-size: 12px !important;
+    padding: 6px 10px;
+  }
+
+  /* General body font size adjustment */
+  body {
+    font-size: 16px;
+  }
+
+  /* Reduce section paddings on mobile */
+  .elementor-9 .elementor-element.elementor-element-faa62de {
+    --padding-top: 50px !important;
+    --padding-bottom: 50px !important;
+  }
+
+  .elementor-9 .elementor-element.elementor-element-2d330b5 {
+    --padding-top: 50px !important;
+    --padding-bottom: 50px !important;
+  }
+
+  .elementor-9 .elementor-element.elementor-element-164ad17 {
+    --padding-top: 50px !important;
+    --padding-bottom: 50px !important;
+  }
+
+  .elementor-9 .elementor-element.elementor-element-24f7ebf {
+    --padding-top: 50px !important;
+    --padding-bottom: 50px !important;
+  }
+
+  .elementor-9 .elementor-element.elementor-element-8e7f0bd {
+    --padding-top: 50px !important;
+    --padding-bottom: 50px !important;
+  }
+
+  .elementor-9 .elementor-element.elementor-element-33720f9 {
+    --padding-top: 60px !important;
+    --padding-bottom: 60px !important;
+  }
+
+  /* Inner card padding reductions */
+  .elementor-9 .elementor-element.elementor-element-2b73cd6,
+  .elementor-9 .elementor-element.elementor-element-de1c8b4,
+  .elementor-9 .elementor-element.elementor-element-0ccba63,
+  .elementor-9 .elementor-element.elementor-element-60c976e,
+  .elementor-9 .elementor-element.elementor-element-2eab238 {
+    --padding-top: 24px !important;
+    --padding-bottom: 24px !important;
+    --padding-left: 20px !important;
+    --padding-right: 20px !important;
+  }
+
+  /* Skills grid: 2 columns instead of 5 */
+  .elementor-9 .elementor-element.elementor-element-52add52 {
+    --e-con-grid-template-columns: repeat(2, 1fr) !important;
+    --gap: 16px 12px !important;
+  }
+
+  /* Counter numbers - smaller on mobile */
+  .elementor-counter-number-wrapper {
+    font-size: 36px !important;
+  }
+
+  /* Marquee text sizing */
+  .elementor-9 .elementor-element.elementor-element-9a07070 .dtr-marquee__text {
+    margin-right: 40px;
+  }
+
+  /* Contact section grid fix */
+  .elementor-9 .elementor-element.elementor-element-33720f9 {
+    --gap: 30px 20px !important;
+  }
+
+  /* Feature items in contact */
+  .elementor-element-e2c8947 .dtr-feature__heading,
+  .elementor-element-53c50aa .dtr-feature__heading,
+  .elementor-element-5c1d705 .dtr-feature__heading {
+    font-size: 17px !important;
+  }
+
+  /* Responsive header improvements */
+  #dtr-responsive-header {
+    padding: 10px 0;
+  }
+
+  #dtr-responsive-header .container {
+    padding: 0 16px;
+  }
+
+  #dtr-responsive-header .dtr-logo-subtext {
+    font-size: 14px;
+  }
+
+  /* Prevent horizontal overflow */
+  #dtr-wrapper {
+    overflow-x: hidden;
+  }
+
+  .e-con-inner {
+    overflow: visible;
+  }
+
+  /* Fix wide elements from causing horizontal scroll */
+  .elementor-element {
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* --- Small phones (max-width: 480px) --- */
+@media (max-width: 480px) {
+
+  /* Even smaller hero heading */
+  h1,
+  .elementor-widget-heading h1.elementor-heading-title {
+    font-size: 1.7em !important;
+  }
+
+  h2,
+  .elementor-widget-heading h2.elementor-heading-title {
+    font-size: 1.4em !important;
+  }
+
+  /* Hero padding tighter */
+  .elementor-9 .elementor-element.elementor-element-7b45631 {
+    --padding-top: 80px !important;
+    --padding-bottom: 40px !important;
+  }
+
+  /* Hero about image smaller */
+  .elementor-element-6c5d9ed .dtr-about__img {
+    max-width: 220px;
+  }
+
+  /* Skills grid: single column */
+  .elementor-9 .elementor-element.elementor-element-52add52 {
+    --e-con-grid-template-columns: repeat(2, 1fr) !important;
+    --gap: 12px 10px !important;
+  }
+
+  /* Buttons padding */
+  .dtr-btn {
+    padding: 12px 18px !important;
+    font-size: 14px !important;
+  }
+
+  .dtr-btn--large {
+    padding: 16px 30px !important;
+    font-size: 18px !important;
+  }
+
+  /* Card inner padding */
+  .elementor-9 .elementor-element.elementor-element-2b73cd6,
+  .elementor-9 .elementor-element.elementor-element-de1c8b4,
+  .elementor-9 .elementor-element.elementor-element-0ccba63,
+  .elementor-9 .elementor-element.elementor-element-60c976e,
+  .elementor-9 .elementor-element.elementor-element-2eab238,
+  .elementor-9 .elementor-element.elementor-element-92a9a39 {
+    --padding-top: 20px !important;
+    --padding-bottom: 20px !important;
+    --padding-left: 16px !important;
+    --padding-right: 16px !important;
+  }
+
+  /* Counter numbers even smaller */
+  .elementor-counter-number-wrapper {
+    font-size: 30px !important;
+  }
+
+  /* Section sub-texts */
+  .services-subtitle {
+    font-size: 14px;
+  }
+}
+
+/* --- Light mode responsive fixes --- */
+@media (max-width: 767px) {
+  body.light .service-card {
+    border-color: rgba(0, 0, 0, 0.06);
+  }
+
+  body.light .service-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* --- Smooth font scaling with clamp (progressive enhancement) --- */
+@supports (font-size: clamp(1rem, 2vw, 2rem)) {
+  .dtr-heading.dtr-heading__gradient {
+    font-size: clamp(1.6rem, 4vw, 3.444rem);
+  }
+}
