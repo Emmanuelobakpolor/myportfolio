@@ -1,0 +1,1107 @@
+/* ============================================
+   Floating Pill Navbar
+   ============================================ */
+
+#dtr-header-global {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 16px 40px !important;
+}
+
+#dtr-header-global .dtr-header-global-content {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 60px;
+  padding: 12px 16px 12px 24px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#dtr-header-global.header-fixed {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 12px 40px !important;
+}
+
+#dtr-header-global.header-fixed .dtr-header-global-content {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* Logo styling inside pill */
+#dtr-header-global .dtr-logo {
+  color: #1a1a1a !important;
+}
+
+#dtr-header-global .dtr-logo-subtext {
+  color: #1a1a1a !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Nav links inside pill */
+#dtr-header-global .dtr-menu-default .sf-menu a {
+  color: #333 !important;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 6px 16px;
+  border-radius: 30px;
+  transition: all 0.25s ease;
+}
+
+#dtr-header-global .dtr-menu-default .sf-menu a:hover,
+#dtr-header-global .dtr-menu-default .sf-menu li.current-menu-item a,
+#dtr-header-global .dtr-menu-default .sf-menu .active {
+  color: #000 !important;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+/* Hire Me button - dark pill style */
+#dtr-header-global .dtr-header-btn {
+  background: #1a1a1a !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 10px 24px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  box-shadow: none !important;
+}
+
+#dtr-header-global .dtr-header-btn:hover {
+  background: #333 !important;
+  transform: scale(1.03);
+}
+
+#dtr-header-global .dtr-header-btn .dtr-header-btn__text {
+  color: #fff !important;
+}
+
+/* Dark mode toggle inside pill */
+#dtr-header-global #dark-mode-toggle {
+  background: rgba(0, 0, 0, 0.06) !important;
+  color: #333 !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 18px !important;
+  margin-right: 10px !important;
+  border: none !important;
+}
+
+#dtr-header-global #dark-mode-toggle:hover {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* --- Dark theme overrides for the pill navbar --- */
+body:not(.light) #dtr-header-global .dtr-header-global-content {
+  background: rgba(20, 20, 22, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+body:not(.light) #dtr-header-global.header-fixed .dtr-header-global-content {
+  background: rgba(20, 20, 22, 0.88);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+body:not(.light) #dtr-header-global .dtr-logo-subtext {
+  color: #fefce1 !important;
+}
+
+body:not(.light) #dtr-header-global .dtr-menu-default .sf-menu a {
+  color: rgba(187, 186, 166, 0.85) !important;
+}
+
+body:not(.light) #dtr-header-global .dtr-menu-default .sf-menu a:hover,
+body:not(.light) #dtr-header-global .dtr-menu-default .sf-menu li.current-menu-item a,
+body:not(.light) #dtr-header-global .dtr-menu-default .sf-menu .active {
+  color: #fefce1 !important;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+body:not(.light) #dtr-header-global .dtr-header-btn {
+  background: #fefce1 !important;
+  color: #1a1a1a !important;
+}
+
+body:not(.light) #dtr-header-global .dtr-header-btn:hover {
+  background: #fff !important;
+}
+
+body:not(.light) #dtr-header-global .dtr-header-btn .dtr-header-btn__text {
+  color: #1a1a1a !important;
+}
+
+body:not(.light) #dtr-header-global #dark-mode-toggle {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: rgba(187, 186, 166, 0.85) !important;
+}
+
+body:not(.light) #dtr-header-global #dark-mode-toggle:hover {
+  background: rgba(255, 255, 255, 0.14) !important;
+}
+
+/* Responsive: shrink pill on smaller screens */
+@media (max-width: 1200px) {
+  #dtr-header-global {
+    padding: 12px 20px !important;
+  }
+  #dtr-header-global .dtr-header-global-content {
+    max-width: 100%;
+    padding: 10px 14px 10px 20px;
+  }
+}
+
+/* ============================================
+   Portfolio / Projects Section - Modern Redesign
+   ============================================ */
+
+/* Section heading row */
+.dtr-portfolio__head-wrapper {
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+/* Filter pills - match the Services section's glass aesthetic */
+.dtr-filter-nav-wrapper {
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(187, 186, 166, 0.1);
+  border-radius: 50px;
+}
+
+.dtr-filter-nav a {
+  padding: 8px 22px;
+  margin: 0 0 0 2px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  color: rgba(187, 186, 166, 0.65);
+  background-color: transparent;
+  background-image: none !important;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.dtr-filter-nav a:hover {
+  color: #fefce1;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.dtr-filter-nav a.active {
+  color: #1a1a1a;
+  background: linear-gradient(135deg, #fcb900, #e6a800) !important;
+  font-weight: 600;
+}
+
+/* Grid: consistent gutters, cards stretch evenly */
+.dtr-portfolio-grid.dtr-portfolio-grid-2col {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+
+.dtr-portfolio-grid-2col .dtr-portfolio-item {
+  padding: 0 12px;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+/* Card shell */
+.dtr-portfolio-item__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.045) 0%, rgba(255, 255, 255, 0.012) 100%);
+  border: 1px solid rgba(187, 186, 166, 0.1);
+  border-radius: 20px;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.dtr-portfolio-item:hover .dtr-portfolio-item__wrapper {
+  transform: translateY(-6px);
+  border-color: rgba(187, 186, 166, 0.25);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.32);
+}
+
+/* Image */
+.dtr-portfolio-item__img {
+  position: relative;
+  border-radius: 14px;
+  aspect-ratio: 16 / 11;
+}
+
+.dtr-portfolio-item__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dtr-portfolio-item__img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.35) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.dtr-portfolio-item:hover .dtr-portfolio-item__img::after {
+  opacity: 1;
+}
+
+.dtr-portfolio-item:hover .dtr-portfolio-item__img img {
+  transform: scale(1.06);
+}
+
+/* Content */
+.dtr-portfolio-item__content {
+  position: static;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 4px 4px 4px;
+}
+
+.dtr-portfolio-item__heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fefce1;
+  margin: 0;
+}
+
+.dtr-portfolio-item__subheading {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: rgba(187, 186, 166, 0.7);
+  margin: 10px 0 0 0;
+}
+
+.dtr-portfolio-item__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 16px 0 0 0;
+}
+
+.dtr-portfolio-item__tech span {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--dtr-text-color-three);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.dtr-portfolio-item:hover .dtr-portfolio-item__tech span {
+  border-color: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.dtr-portfolio-item__links {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 18px;
+  position: relative;
+  z-index: 99;
+}
+
+.dtr-portfolio-item__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.dtr-portfolio-item__links .link-live {
+  background: linear-gradient(135deg, #fcb900, #e6a800);
+  color: #1a1a1a;
+}
+
+.dtr-portfolio-item__links .link-live:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.dtr-portfolio-item__links .link-github {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: var(--dtr-text-color-three);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dtr-portfolio-item__links .link-github:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  transform: translateY(-2px);
+}
+
+.dtr-portfolio-item__links svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.dtr-portfolio-item__links .link-live svg {
+  fill: #1a1a1a;
+}
+
+.dtr-portfolio-item__links .link-github svg {
+  fill: var(--dtr-text-color-three);
+}
+
+/* Remove the old arrow link when new links are present */
+.dtr-portfolio-item__wrapper .dtr-portfolio-item__link {
+  display: none;
+}
+
+/* Remove the full-overlay link so individual buttons are clickable */
+.dtr-portfolio-item__wrapper .dtr-portfolio-item__wrap-link {
+  display: none;
+}
+
+/* Category badge - floats over the image, top-left.
+   Markup keeps the badge as the first child of __content (a sibling of
+   __img), so it's positioned absolutely against the wrapper instead of
+   requiring every card's HTML to move it inside __img. */
+.dtr-portfolio-item__category {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  z-index: 2;
+  display: inline-block;
+  padding: 4px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 20px;
+  margin-bottom: 0;
+  color: #1a1a1a;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.dtr-portfolio-item__category--website {
+  background: linear-gradient(135deg, #6ee7b7, #3b82f6);
+}
+
+.dtr-portfolio-item__category--mobile {
+  background: linear-gradient(135deg, #f472b6, #a78bfa);
+}
+
+.dtr-portfolio-item__category--webapp {
+  background: linear-gradient(135deg, #fbbf24, #f97316);
+}
+
+/* ============================================
+   Services Section - Modern Redesign
+   ============================================ */
+
+/* Services grid layout */
+#services .e-con-inner > .e-grid {
+  gap: 20px;
+}
+
+/* Service card wrapper */
+.service-card {
+  position: relative;
+  padding: 36px 28px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+  border: 1px solid rgba(187, 186, 166, 0.1);
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--dtr-base-color-tertiary), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.service-card:hover {
+  border-color: rgba(187, 186, 166, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+/* Service icon */
+.service-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  font-size: 26px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.service-card__icon--frontend {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(110, 231, 183, 0.15));
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.service-card__icon--mobile {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(244, 114, 182, 0.15));
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.service-card__icon--backend {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(249, 115, 22, 0.15));
+  border: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+.service-card__icon--devops {
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.15), rgba(99, 102, 241, 0.15));
+  border: 1px solid rgba(34, 211, 238, 0.2);
+}
+
+.service-card__icon--api {
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.15), rgba(16, 185, 129, 0.15));
+  border: 1px solid rgba(52, 211, 153, 0.2);
+}
+
+.service-card__icon--database {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(251, 146, 60, 0.15));
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* Service number */
+.service-card__number {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(187, 186, 166, 0.06);
+  pointer-events: none;
+  transition: color 0.4s ease;
+}
+
+.service-card:hover .service-card__number {
+  color: rgba(187, 186, 166, 0.12);
+}
+
+/* Service title */
+.service-card__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fefce1;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+/* Service description */
+.service-card__description {
+  font-size: 15px;
+  line-height: 1.65;
+  color: rgba(187, 186, 166, 0.7);
+  margin: 0 0 20px 0;
+}
+
+/* Service tech list */
+.service-card__tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-card__tech-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--dtr-text-color-three);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-card__tech-list li {
+  border-color: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+/* Services section heading subtitle */
+.services-subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(187, 186, 166, 0.65);
+  max-width: 520px;
+  margin: 8px 0 0 0;
+}
+
+/* Services grid: 3 columns on desktop, 2 on tablet, 1 on mobile */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .service-card {
+    padding: 28px 22px;
+  }
+  .service-card__icon {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .service-card__title {
+    font-size: 18px;
+  }
+  .service-card__number {
+    font-size: 40px;
+  }
+}
+
+/* ============================================
+   Portfolio Responsive
+   ============================================ */
+@media (max-width: 1024px) {
+  .dtr-portfolio__head-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .dtr-filter-nav-wrapper {
+    width: 100%;
+  }
+  .dtr-filter-nav {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .dtr-portfolio-grid-2col .dtr-portfolio-item {
+    width: 100% !important;
+  }
+  .dtr-portfolio-item__category {
+    top: 24px;
+    left: 24px;
+  }
+  .dtr-portfolio-item__links {
+    flex-wrap: wrap;
+  }
+  .dtr-portfolio-item__links a {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  .dtr-portfolio-item__tech span {
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+  .dtr-filter-nav-wrapper {
+    border-radius: 20px;
+  }
+  .dtr-filter-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+  .dtr-filter-nav a {
+    white-space: nowrap;
+  }
+}
+
+/* ============================================
+   Responsive & Mobile Improvements
+   ============================================ */
+
+/* --- Tablet (max-width: 1024px) --- */
+@media (max-width: 1024px) {
+
+  /* Hero section: reduce heading size */
+  h1,
+  .elementor-widget-heading h1.elementor-heading-title {
+    font-size: 2.5em;
+  }
+
+  h2,
+  .elementor-widget-heading h2.elementor-heading-title {
+    font-size: 2em;
+  }
+
+  /* Hero CTA buttons: center and allow wrapping */
+  .elementor-9 .elementor-element.elementor-element-d4420fe {
+    --flex-wrap-mobile: wrap;
+    --justify-content: center;
+  }
+
+  /* Hero email button: truncate long text */
+  .elementor-element-a5daa23 .dtr-btn__text {
+    max-width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  /* Hero about image: constrain size */
+  .elementor-element-6c5d9ed .dtr-about__img img {
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Reduce section paddings */
+  .elementor-9 .elementor-element.elementor-element-164ad17,
+  .elementor-9 .elementor-element.elementor-element-24f7ebf,
+  .elementor-9 .elementor-element.elementor-element-8e7f0bd {
+    --padding-top: 60px;
+    --padding-bottom: 60px;
+  }
+}
+
+/* --- Mobile (max-width: 767px) --- */
+@media (max-width: 767px) {
+
+  /* Hero section: reduce top padding */
+  .elementor-9 .elementor-element.elementor-element-7b45631 {
+    --padding-top: 100px !important;
+    --padding-bottom: 50px !important;
+    --padding-left: 16px !important;
+    --padding-right: 16px !important;
+    --gap: 30px 20px !important;
+  }
+
+  /* Hero heading: scale down significantly */
+  h1,
+  .elementor-widget-heading h1.elementor-heading-title {
+    font-size: 2em !important;
+    letter-spacing: -0.5px;
+  }
+
+  h2,
+  .elementor-widget-heading h2.elementor-heading-title {
+    font-size: 1.6em !important;
+  }
+
+  h3,
+  .elementor-widget-heading h3.elementor-heading-title {
+    font-size: 1.35em !important;
+  }
+
+  /* Hero subheading text */
+  .elementor-element-8331b54 .elementor-widget-text-editor .elementor-widget-container {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* Hero icon heading */
+  .dtr-iconhead__heading {
+    font-size: 14px !important;
+  }
+
+  .dtr-iconhead {
+    justify-content: center;
+  }
+
+  /* Hero CTA buttons: stack vertically */
+  .elementor-9 .elementor-element.elementor-element-d4420fe {
+    --flex-direction: column !important;
+    --container-widget-width: 100% !important;
+    --container-widget-flex-grow: 0 !important;
+    --align-items: center !important;
+    --gap: 12px 0px !important;
+  }
+
+  /* Make buttons full-width on mobile */
+  .elementor-element-d4420fe .elementor-widget-dtr-button {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .elementor-element-d4420fe .dtr-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+    font-size: 15px !important;
+  }
+
+  /* Email button: truncate long email address */
+  .elementor-element-a5daa23 .dtr-btn__text {
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 13px !important;
+  }
+
+  /* Hero about image section */
+  .elementor-element-8c0112e {
+    order: -1;
+  }
+
+  .elementor-element-6c5d9ed .dtr-about__img {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .elementor-element-6c5d9ed .dtr-about__img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Hero floating labels: adjust positioning */
+  .elementor-9 .elementor-element.elementor-element-6c5d9ed .dtr-about-title__left {
+    top: auto !important;
+    bottom: -10px;
+    left: -5px !important;
+  }
+
+  .elementor-9 .elementor-element.elementor-element-6c5d9ed .dtr-about-title__right {
+    bottom: -10px !important;
+    right: -5px !important;
+  }
+
+  .dtr-about-title {
+    font-size: 12px !important;
+    padding: 6px 10px;
+  }
+
+  /* General body font size adjustment */
+  body {
+    font-size: 16px;
+  }
+
+  /* Reduce section paddings on mobile */
+  .elementor-9 .elementor-element.elementor-element-faa62de {
+    --padding-top: 50px !important;
+    --padding-bottom: 50px !important;
+  }
+
+  .elementor-9 .elementor-element.elementor-element-2d330b5 {
+    --padding-top: 50px !important;
+    --padding-bottom: 50px !important;
+  }
+
+  .elementor-9 .elementor-element.elementor-element-164ad17 {
+    --padding-top: 50px !important;
+    --padding-bottom: 50px !important;
+  }
+
+  .elementor-9 .elementor-element.elementor-element-24f7ebf {
+    --padding-top: 50px !important;
+    --padding-bottom: 50px !important;
+  }
+
+  .elementor-9 .elementor-element.elementor-element-8e7f0bd {
+    --padding-top: 50px !important;
+    --padding-bottom: 50px !important;
+  }
+
+  .elementor-9 .elementor-element.elementor-element-33720f9 {
+    --padding-top: 60px !important;
+    --padding-bottom: 60px !important;
+  }
+
+  /* Inner card padding reductions */
+  .elementor-9 .elementor-element.elementor-element-2b73cd6,
+  .elementor-9 .elementor-element.elementor-element-de1c8b4,
+  .elementor-9 .elementor-element.elementor-element-0ccba63,
+  .elementor-9 .elementor-element.elementor-element-60c976e,
+  .elementor-9 .elementor-element.elementor-element-2eab238 {
+    --padding-top: 24px !important;
+    --padding-bottom: 24px !important;
+    --padding-left: 20px !important;
+    --padding-right: 20px !important;
+  }
+
+  /* Skills grid: 2 columns instead of 5 */
+  .elementor-9 .elementor-element.elementor-element-52add52 {
+    --e-con-grid-template-columns: repeat(2, 1fr) !important;
+    --gap: 16px 12px !important;
+  }
+
+  /* Counter numbers - smaller on mobile */
+  .elementor-counter-number-wrapper {
+    font-size: 36px !important;
+  }
+
+  /* Marquee text sizing */
+  .elementor-9 .elementor-element.elementor-element-9a07070 .dtr-marquee__text {
+    margin-right: 40px;
+  }
+
+  /* Contact section grid fix */
+  .elementor-9 .elementor-element.elementor-element-33720f9 {
+    --gap: 30px 20px !important;
+  }
+
+  /* Feature items in contact */
+  .elementor-element-e2c8947 .dtr-feature__heading,
+  .elementor-element-53c50aa .dtr-feature__heading,
+  .elementor-element-5c1d705 .dtr-feature__heading {
+    font-size: 17px !important;
+  }
+
+  /* Sticky mobile header */
+  #dtr-responsive-header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 10px 0;
+    background-color: var(--dtr-base-color-primary);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--dtr-border-color-main);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Add shadow when scrolled */
+  #dtr-responsive-header.xs-admin-toolbar {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Push page content below the fixed header */
+  #dtr-main-header {
+    margin-bottom: 0;
+  }
+
+  .elementor-9 .elementor-element.elementor-element-7b45631 {
+    --padding-top: 120px !important;
+  }
+
+  #dtr-responsive-header .container {
+    padding: 0 16px;
+  }
+
+  #dtr-responsive-header .dtr-logo-subtext {
+    font-size: 14px;
+  }
+
+  /* Dropdown menu: slides down from the sticky header */
+  .slicknav_nav {
+    position: fixed !important;
+    top: auto;
+    left: 0;
+    right: 0;
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+    background-color: var(--dtr-base-color-primary);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid var(--dtr-border-color-main);
+    z-index: 9998;
+  }
+
+  /* Light mode sticky header */
+  body.light #dtr-responsive-header {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+  }
+
+  body.light #dtr-responsive-header.xs-admin-toolbar {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  body.light .slicknav_nav {
+    background-color: #ffffff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+  }
+
+  /* Prevent horizontal overflow */
+  #dtr-wrapper {
+    overflow-x: hidden;
+  }
+
+  .e-con-inner {
+    overflow: visible;
+  }
+
+  /* Fix wide elements from causing horizontal scroll */
+  .elementor-element {
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* --- Small phones (max-width: 480px) --- */
+@media (max-width: 480px) {
+
+  /* Even smaller hero heading */
+  h1,
+  .elementor-widget-heading h1.elementor-heading-title {
+    font-size: 1.7em !important;
+  }
+
+  h2,
+  .elementor-widget-heading h2.elementor-heading-title {
+    font-size: 1.4em !important;
+  }
+
+  /* Hero padding tighter (accounts for sticky header) */
+  .elementor-9 .elementor-element.elementor-element-7b45631 {
+    --padding-top: 100px !important;
+    --padding-bottom: 40px !important;
+  }
+
+  /* Hero about image smaller */
+  .elementor-element-6c5d9ed .dtr-about__img {
+    max-width: 220px;
+  }
+
+  /* Skills grid: single column */
+  .elementor-9 .elementor-element.elementor-element-52add52 {
+    --e-con-grid-template-columns: repeat(2, 1fr) !important;
+    --gap: 12px 10px !important;
+  }
+
+  /* Buttons padding */
+  .dtr-btn {
+    padding: 12px 18px !important;
+    font-size: 14px !important;
+  }
+
+  .dtr-btn--large {
+    padding: 16px 30px !important;
+    font-size: 18px !important;
+  }
+
+  /* Card inner padding */
+  .elementor-9 .elementor-element.elementor-element-2b73cd6,
+  .elementor-9 .elementor-element.elementor-element-de1c8b4,
+  .elementor-9 .elementor-element.elementor-element-0ccba63,
+  .elementor-9 .elementor-element.elementor-element-60c976e,
+  .elementor-9 .elementor-element.elementor-element-2eab238,
+  .elementor-9 .elementor-element.elementor-element-92a9a39 {
+    --padding-top: 20px !important;
+    --padding-bottom: 20px !important;
+    --padding-left: 16px !important;
+    --padding-right: 16px !important;
+  }
+
+  /* Counter numbers even smaller */
+  .elementor-counter-number-wrapper {
+    font-size: 30px !important;
+  }
+
+  /* Section sub-texts */
+  .services-subtitle {
+    font-size: 14px;
+  }
+}
+
+/* --- Light mode responsive fixes --- */
+@media (max-width: 767px) {
+  body.light .service-card {
+    border-color: rgba(0, 0, 0, 0.06);
+  }
+
+  body.light .service-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* --- Light mode: portfolio cards --- */
+body.light .dtr-portfolio-item__wrapper {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light .dtr-portfolio-item:hover .dtr-portfolio-item__wrapper {
+  border-color: rgba(0, 0, 0, 0.14);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+body.light .dtr-portfolio-item__tech span {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light .dtr-portfolio-item:hover .dtr-portfolio-item__tech span {
+  background-color: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+body.light .dtr-portfolio-item__links .link-github {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #333333;
+}
+
+body.light .dtr-portfolio-item__links .link-github:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light .dtr-portfolio-item__links .link-github svg {
+  fill: #333333;
+}
+
+body.light .dtr-filter-nav-wrapper {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light .dtr-filter-nav a {
+  color: #555555;
+}
+
+body.light .dtr-filter-nav a:hover {
+  color: #1a1a1a;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* --- Smooth font scaling with clamp (progressive enhancement) --- */
+@supports (font-size: clamp(1rem, 2vw, 2rem)) {
+  .dtr-heading.dtr-heading__gradient {
+    font-size: clamp(1.6rem, 4vw, 3.444rem);
+  }
+}
